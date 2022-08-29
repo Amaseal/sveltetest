@@ -10,6 +10,7 @@
   };
 
   export let data;
+  $: console.log(data);
 </script>
 
 <button on:click={() => update()}>fetch</button>
@@ -18,4 +19,5 @@
   Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
 
-{response}{data.products}
+{response}
+{data.products}
