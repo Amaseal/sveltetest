@@ -20,4 +20,6 @@
 </p>
 
 {response}
-{data.products}
+{#each data.data as item}
+  {item.id}
+{/each}
